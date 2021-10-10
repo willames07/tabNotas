@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-notas {
+    margin: 0 auto;
+}
+.table-notas,
+th,
+td {
+    border: solid 1px #000;
+    border-collapse: collapse;
+    padding: .2rem 1rem;
+    letter-spacing: .1rem;
+    
+} 
+.aluno {
+    font-weight: lighter;
+    text-align: center;
+}

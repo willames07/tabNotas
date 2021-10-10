@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tab alunos ReP</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header class="camp-notas">
+        <form class="dados">
+            <label for="aluno" class="camp-input nome-aluno"> aluno:
+                <input type="text" class="aluno" id="aluno">
+            </label>
+
+            <label for="nota1" class="camp-input"> nota 1:
+                <input type="number" class="aluno" id="nota1">
+            </label>
+
+            <label for="nota2" class="camp-input"> nota 2:
+                <input type="number" class="aluno" id="nota2">
+            </label>
+
+            <label for="nota3" class="camp-input"> nota 3:
+                <input type="number" class="aluno" id="nota3">
+            </label>
+        </form>
+
+        <button id="btn-enviar"> enviar </button>
+
+    </header>
+
+    <main id="main">
+
+        <section id="table-informacoes">
+
+            <table class="table-notas">
+                <tr class="title">
+                    <th id="ttle-table" colspan="6">
+                        alunos
+                    </th>
+                </tr>
+                <tr id="categorias">
+                    <th>nome</th> <th>nota 1</th> <th> nota 2 </th> <th> nota 3 </th> <th> total </th> <th> status </th>
+                </tr>           
+            </table>
+
+        </section>
+
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
