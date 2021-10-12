@@ -18,15 +18,15 @@
             </label>
 
             <label for="nota1" class="camp-input"> nota 1:
-                <input type="number" class="aluno" id="nota1">
+                <input type="number" id="nota1" min="0" max="10">
             </label>
 
             <label for="nota2" class="camp-input"> nota 2:
-                <input type="number" class="aluno" id="nota2">
+                <input type="number" id="nota2"  min="0" max="10">
             </label>
 
             <label for="nota3" class="camp-input"> nota 3:
-                <input type="number" class="aluno" id="nota3">
+                <input type="number" id="nota3"  min="0" max="10">
             </label>
         </form>
 
@@ -40,18 +40,25 @@
 
             <table class="table-notas">
                 <tr class="title">
-                    <th id="ttle-table" colspan="6">
+                    <th id="ttle-table" colspan="7">
                         alunos
                     </th>
                 </tr>
                 <tr id="categorias">
-                    <th>nome</th> <th>nota 1</th> <th> nota 2 </th> <th> nota 3 </th> <th> total </th> <th> status </th>
-                </tr>           
+                    <th colspan="2">nome</th> <th>nota 1</th> <th> nota 2 </th> <th> nota 3 </th> <th> total </th> <th> status </th>
+                </tr>      
             </table>
 
         </section>
 
     </main>
+
+    <footer class="bottom">
+        <label for="id-remover" class="index" > apagar aluno:
+            <input type="number" name="" id="id-remover">
+            <button id="remover">excluir</button>
+        </label>
+    </footer>
     
     <script src="js/main.js"></script>
 </body>
