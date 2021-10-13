@@ -5,7 +5,63 @@
     font-family: Arial, Helvetica, sans-serif;
     outline: none;
 }
+
+body {
+    background-color: rgba(204, 204, 204, 0.576);
+}
 /* STYLE HEADER */
+
+.camp-notas { 
+    background-color: rgb(151 144 142 / 75%);
+    height: 7rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    background-color: rgb(63, 63, 153);
+    flex-wrap: wrap;
+}
+.camp-input {
+    padding: 0 5px;
+    height: 50px;
+
+}
+.dados {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.dados .aluno {
+    width: 150px;
+    text-align: start;
+}
+
+.dados .nota {
+    border: none;
+    width: 30px;
+}
+
+#btn-enviar {
+    color: rgba(63, 63, 153, 0.898);
+
+}
+#btn-enviar:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+input {
+    background-color: #e3e3e364;
+    border: none;
+    height: 25px;
+    padding-left: .3rem;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.699);
+}
+
 
 
 /* STYLE TABELA ALUNOS */
@@ -15,11 +71,10 @@
 .table-notas,
 th,
 td {
-    border: solid 1px #000;
+    border: solid 1px rgba(0, 0, 0, 0.624);
     border-collapse: collapse;
     padding: .2rem 1rem;
-    letter-spacing: .1rem;
-    
+    letter-spacing: .1rem;   
 } 
 .aluno {
     font-weight: lighter;
@@ -27,6 +82,7 @@ td {
 }
 th {
     text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.624);
 }
 
 
@@ -34,23 +90,33 @@ th {
 .bottom {
     position: fixed;
     bottom: 0;
-    background: rgb(73, 15, 15);
+    background-color: rgb(35, 35, 131);
     height: 100px;
     width: 100%;
 
-
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-#remover {
-    border: none;
+button {
+    border: solid 2px rgb(35, 35, 131);
     padding: .3rem .7rem;
     border-radius: 3px;
     text-transform: capitalize;
     letter-spacing: .1rem;
     cursor: pointer;
+    color: rgb(35, 35, 131);
+    transition: .3s;
+    font-weight: bolder;
 }
+
+button:hover {
+    color: white;
+    border-color: white;
+    background-color: rgb(35, 35, 131);   
+}
+
 .index {
     outline: none;
     display: flex;

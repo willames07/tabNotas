@@ -99,4 +99,6 @@ const atualizarPosition = ()=> {
 
     }
 
+    position = Number(listPosition[listPosition.length - 1].innerHTML) 
+
 }
